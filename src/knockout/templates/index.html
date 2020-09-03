@@ -86,7 +86,7 @@
       />
       <input type="button" data-bind="event: {mousedown: nextPageMouseDown}, value: pageNextText, click: nextPageUIClick, visible: !koIsLastPage(), css: cssNavigationNext" />
       <input type="button" data-bind="event: {mousedown: navigationMouseDown}, value: previewText, click: showPreview, visible: koIsLastPage() && isPreviewButtonVisible, css: cssNavigationPreview" />
-      <input type="button" data-bind="event: {mousedown: navigationMouseDown}, value: completeText, click: completeLastPage, visible: koIsLastPage() && isCompleteButtonVisible, css: cssNavigationComplete" />
+      <input type="button" class="survey-submit-button" data-bind="event: {mousedown: navigationMouseDown}, value: completeText, click: completeLastPage, visible: koIsLastPage() && isCompleteButtonVisible, css: cssNavigationComplete" />
   </div>
 </script>
 <script type="text/html" id="survey-navigation-start">
